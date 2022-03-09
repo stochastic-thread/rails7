@@ -1,0 +1,2 @@
+class ProjectLink < ApplicationRecord
+end

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🧙‍♀️🧙‍♂️</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="navbar" style="height=250px; background-color: black; padding: 0px;">
+      <h1 style="font-family: 'Playfair Display', serif; color: white; font-size: <%= Math::PI/2 %>em; padding-left: 0.5em;">Sorcery</h1>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

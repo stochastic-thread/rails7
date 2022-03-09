@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cryptoasset %>
+
+<div>
+  <%= link_to "Edit this cryptoasset", edit_cryptoasset_path(@cryptoasset) %> |
+  <%= link_to "Back to cryptoassets", cryptoassets_path %>
+
+  <%= button_to "Destroy this cryptoasset", @cryptoasset, method: :delete %>
+</div>
